@@ -18,12 +18,10 @@ Your task is to **optimize performance and fix any issues you find** while prese
 
 ## Submission
 
-Please submit a GitHub repo or ZIP file with:
-
-- Your updated working code (npm install; npm run build; npm start)
+Please submit:
+- a GitHub repo with your updated working code
 - An accompanying PDF file or readme explaining all the changes you did in Where/What/Why format
-
-**[Bonus]** Deploy the site to a free platform (e.g., Netlify, Vercel, Render) and share the live link.
+- Deploy the site to a free platform (e.g., Netlify, Vercel, Render) and share the live link.
 
 ## Example of Changes Documentation
 
