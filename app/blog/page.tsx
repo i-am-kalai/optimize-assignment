@@ -29,7 +29,7 @@ const blogPosts = [
       "Exploring the latest advancements in AI art generation and what they mean for creatives",
     date: "March 15, 2024",
     readTime: 5,
-    image: "/1.png",
+    image: "/1.webp",
     link: "/blog/future-ai-art",
   },
   {
@@ -38,7 +38,7 @@ const blogPosts = [
       "Learn how to write more effective prompts to get the best results from AI art generators",
     date: "March 12, 2024",
     readTime: 8,
-    image: "/2.png",
+    image: "/2.webp",
     link: "/blog/ai-art-prompts",
   },
   {
@@ -47,7 +47,7 @@ const blogPosts = [
       "How businesses are leveraging AI-generated art in their marketing and branding",
     date: "March 10, 2024",
     readTime: 6,
-    image: "/3.png",
+    image: "/3.webp",
     link: "/blog/commercial-ai-art",
   },
   {
@@ -56,7 +56,7 @@ const blogPosts = [
       "Understanding the ethical considerations and best practices in AI art creation",
     date: "March 8, 2024",
     readTime: 7,
-    image: "/4.png",
+    image: "/4.webp",
     link: "/blog/ethics-ai-art",
   },
   {
@@ -65,7 +65,7 @@ const blogPosts = [
       "A deep dive into creating and fine-tuning custom art styles with AI",
     date: "March 5, 2024",
     readTime: 9,
-    image: "/5.png",
+    image: "/5.webp",
     link: "/blog/custom-ai-styles",
   },
   {
@@ -74,7 +74,7 @@ const blogPosts = [
       "How to create engaging AI-generated content for your social media presence",
     date: "March 3, 2024",
     readTime: 6,
-    image: "/6.png",
+    image: "/6.webp",
     link: "/blog/ai-art-social-media",
   },
 ];
