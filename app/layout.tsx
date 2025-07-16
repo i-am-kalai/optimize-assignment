@@ -25,11 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-white dark:bg-gray-900">
-        <link
-          rel="stylesheet"
-          href="https://ojvz8verwlmikl57.public.blob.vercel-storage.com/fonts.css"
-          media="all"
-        />
         <AppBar />
         <main className="flex min-h-screen flex-col ">{children}</main>
         <SpeedInsights />
