@@ -10,6 +10,7 @@ export const usePexelImageGen = () => {
     message: string | null;
   }>({ hasError: false, message: null });
   const [photos, setPhotos] = useState<Photo[]>([]);
+  const [noImagesGenerated, setNoImagesGenerated] = useState(false);
 
   const generateImages = async (query: string, perPage: number = 80) => {
     startTransition(async () => {
@@ -24,6 +25,7 @@ export const usePexelImageGen = () => {
         }
 
         setPhotos(response.photos);
+        setNoImagesGenerated(response.photos.length === 0);
       } catch (error) {
         console.error("Error fetching photos:", error);
         setError({
@@ -34,5 +36,5 @@ export const usePexelImageGen = () => {
     });
   };
 
-  return { generateImages, photos, isGenerating, error };
+  return { generateImages, photos, isGenerating, error, noImagesGenerated };
 };
