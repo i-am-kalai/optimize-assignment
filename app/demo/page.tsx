@@ -1,22 +1,18 @@
 "use client";
 
+import { usePexelImageGen } from "@/hooks/usePexelImageGen";
 import { useState } from "react";
 import PromptInput from "../components/PromptInput";
-import GeneratedImage from "../components/GeneratedImage";
+import { DemoResult } from "./DemoResult";
 
 export default function Demo() {
   const [prompt, setPrompt] = useState("");
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const { isGenerating, photos, generateImages, error, noImagesGenerated } =
+    usePexelImageGen();
 
-  const handleGenerate = async () => {
+  const handleGenerate = () => {
     if (!prompt) return;
-
-    setIsGenerating(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setGeneratedImage("/11.png");
-    setIsGenerating(false);
+    generateImages(prompt, 1);
   };
 
   return (
@@ -34,7 +30,12 @@ export default function Demo() {
             onGenerate={handleGenerate}
           />
 
-          {generatedImage && <GeneratedImage imageUrl={generatedImage} />}
+          <DemoResult
+            imageUrl={photos[0]?.src.original}
+            isGenerating={isGenerating}
+            hasError={error.hasError}
+            noImagesGenerated={noImagesGenerated}
+          />
         </div>
 
         <div className="mt-12 text-center">
