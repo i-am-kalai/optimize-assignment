@@ -24,13 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <body className="min-h-screen bg-white dark:bg-gray-900">
         <link
           rel="stylesheet"
           href="https://ojvz8verwlmikl57.public.blob.vercel-storage.com/fonts.css"
         />
-      </head>
-      <body className="min-h-screen bg-white dark:bg-gray-900">
         <AppBar />
         <main className="flex min-h-screen flex-col ">{children}</main>
         <SpeedInsights />
