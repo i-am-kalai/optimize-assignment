@@ -11,7 +11,10 @@ export default function Hero() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/7670835-uhd_3840_2160_30fps.webm" type="video/webm" />
+        <source
+          src={`${process.env.CDN_STORAGE_URL}/videos/7670835-uhd_3840_2160_30fps.webm`}
+          type="video/webm"
+        />
       </video>
 
       {/* Overlay */}

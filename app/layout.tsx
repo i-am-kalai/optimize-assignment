@@ -25,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="./fonts.css" />
+        <link
+          rel="stylesheet"
+          href={`${process.env.CDN_STORAGE_URL}/styles/fonts.css`}
+        />
       </head>
       <body className="min-h-screen bg-white dark:bg-gray-900">
         <AppBar />
