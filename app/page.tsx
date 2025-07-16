@@ -2,7 +2,6 @@ import Features from "./components/Features";
 import FontShowcase from "./components/FontShowcase";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
-import "./fonts.css";
 
 const features = [
   {
