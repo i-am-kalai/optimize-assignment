@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import "./globals.css";
 import AppBar from "./components/AppBar";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MagicMoments - AI Art Generator for Creatives",
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-white dark:bg-gray-900">
         <AppBar />
         <main className="flex min-h-screen flex-col ">{children}</main>
+        <SpeedInsights />
       </body>
     </html>
   );
