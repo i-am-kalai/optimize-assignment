@@ -4,6 +4,9 @@
 
 https://optimize-assignment-self.vercel.app/
 
+## Code changes comparison
+https://github.com/SravanScenarix/optimize-assignment/compare/main...i-am-kalai:optimize-assignment:main
+
 ## Performance optimizations
 
 ### Image type conversion
@@ -112,6 +115,18 @@ https://optimize-assignment-self.vercel.app/
 ---
 
 # Performance results
+
+## Timings recorded
+### Before optimisation
+**DOM Content Loaded**: 13.44s
+**Load**: 1.2 minutes
+**Finish**: 3 minutes
+
+### After optimisation
+**DOM Content Loaded**: 1.55s
+**Load**: 1.95s
+**Finish(including below the fold content)**: 25.28 s
+
 
 ## Vercel Speed insights
 <img width="1510" height="718" alt="image" src="https://github.com/user-attachments/assets/a1d9833f-b8f8-4d85-a8c7-d99856b74ba4" />
