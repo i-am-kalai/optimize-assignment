@@ -120,15 +120,15 @@ https://github.com/SravanScenarix/optimize-assignment/compare/main...i-am-kalai:
 
 ### Before optimisation
 
-**DOM Content Loaded**: 13.44s
-**Load**: 1.2 minutes
-**Finish**: 3 minutes
+1. **DOM Content Loaded**: 13.44s
+2. **Load**: 1.2 minutes
+3. **Finish**: 3 minutes
 
 ### After optimisation
 
-**DOM Content Loaded**: 1.55s
-**Load**: 1.95s
-**Finish(including below the fold content)**: 25.28 s
+1. **DOM Content Loaded**: 1.55s
+2. **Load**: 1.95s
+3. **Finish(including below the fold content)**: 25.28 s
 
 
 ## Vercel Speed insights
