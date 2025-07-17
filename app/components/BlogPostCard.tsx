@@ -1,3 +1,4 @@
+import config from "@/env/config";
 import Link from "next/link";
 
 interface BlogPost {
@@ -18,7 +19,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
     <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
       <div className="relative h-48">
         <img
-          src={`${process.env.CDN_STORAGE_URL}/images${post.image}`}
+          src={`${config.ASSETS_PATH}/images${post.image}`}
           className="object-cover"
         />
       </div>

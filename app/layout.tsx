@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import config from "@/env/config";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import AppBar from "./components/AppBar";
@@ -27,7 +28,7 @@ export default function RootLayout({
       <head>
         <link
           rel="stylesheet"
-          href={`${process.env.CDN_STORAGE_URL}/styles/fonts.css`}
+          href={`${config.ASSETS_PATH}/styles/fonts.css`}
         />
       </head>
       <body className="min-h-screen bg-white dark:bg-gray-900">
