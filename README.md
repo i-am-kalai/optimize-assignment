@@ -117,12 +117,15 @@ https://github.com/SravanScenarix/optimize-assignment/compare/main...i-am-kalai:
 # Performance results
 
 ## Timings recorded
+
 ### Before optimisation
+
 **DOM Content Loaded**: 13.44s
 **Load**: 1.2 minutes
 **Finish**: 3 minutes
 
 ### After optimisation
+
 **DOM Content Loaded**: 1.55s
 **Load**: 1.95s
 **Finish(including below the fold content)**: 25.28 s
