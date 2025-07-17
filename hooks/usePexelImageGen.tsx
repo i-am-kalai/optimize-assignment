@@ -1,7 +1,8 @@
+import config from "@/env/config";
 import { createClient, Photo } from "pexels";
 import { useState, useTransition } from "react";
 
-const client = createClient(process.env.NEXT_PUBLIC_PEXELS_API_KEY || "");
+const client = createClient(config.PEXELS_API_KEY as string);
 
 export const usePexelImageGen = () => {
   const [isGenerating, startTransition] = useTransition();

@@ -1,3 +1,4 @@
+import config from "@/env/config";
 import Link from "next/link";
 
 export default function Hero() {
@@ -12,7 +13,7 @@ export default function Hero() {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src={`${process.env.CDN_STORAGE_URL}/videos/7670835-uhd_3840_2160_30fps.webm`}
+          src={`${config.ASSETS_PATH}/videos/7670835-uhd_3840_2160_30fps.webm`}
           type="video/webm"
         />
       </video>
